@@ -98,13 +98,10 @@ header h2 {
 }
 
 .edit-item {
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-image: url("./img/glyphicons/png/glyphicons-31-pencil.png");
-    /*float: right;*/
-    justify-content: flex-end;
-    margin-left: auto;
+    background-image: url("./img/glyphicons/png/glyphicons-433-plus.png");
+    position: static;
+    right: 16px;
+    bottom:  20px;
 
 }
 
@@ -162,6 +159,13 @@ li p {
 
 }
 
+li img {
+
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
 li:first-child {
   
     border-top: 5px solid grey;
@@ -209,12 +213,13 @@ li:active, .button:active  {
 
 }
 
-footer h2 {
+footer {
 
-    margin: 0px;
-    font-weight: normal;
-    display: inline-block;
-    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    line-height: 50px;
+    border-top: 1px solid orange;
 
 }
 
