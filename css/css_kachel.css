@@ -1,0 +1,233 @@
+html, body {
+
+    margin: 0px;
+    font-family: "Avenir Medium", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+
+}
+
+/* block text selection */
+
+* {
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+}
+
+/* use flexbox for horizontal positioning (replaces floating used in earlier versions) */
+header, footer, li {
+
+    display: flex;
+
+}
+
+/* header and its parts */
+
+header {
+
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    line-height: 50px;
+    #border-bottom: 1px solid grey;
+
+}
+
+header h2 {
+
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+.button {
+
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-origin: content-box;
+    background-position: center center;
+    filter: invert(90%);
+    -webkit-filter: invert(90%);
+
+}
+
+.listeners-active .toggle-listeners {
+
+    background-image: url("./img/glyphicons/png/glyphicons-560-mic-mute.png");
+    background-size: 23px 30px;
+    /*float: left;*/
+    justify-content: flex-start;
+
+}
+
+.toggle-listeners {
+
+    background-image: url("./img/glyphicons/png/glyphicons-301-microphone.png");
+    background-size: 23px 30px;
+    /*float: left;*/
+    justify-content: flex-start;
+
+}
+
+.listeners-active .toggle-list {
+
+    background-image: url("./img/glyphicons/png/glyphicons-517-menu-hamburger.png");
+    background-size: 23px 30px;
+    /*float: left;*/
+    justify-content: flex-start;
+
+}
+
+.new-item {
+
+    background-image: url("./img/glyphicons/png/glyphicons-433-plus.png");
+    /*float: right;*/
+    justify-content: flex-end;
+    margin-left: auto;
+
+}
+
+.edit-item {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-image: url("./img/glyphicons/png/glyphicons-31-pencil.png");
+    /*float: right;*/
+    justify-content: flex-end;
+    margin-left: auto;
+
+}
+
+/* main part of the view */
+
+.maincontent {
+
+    width: 100%;
+    max-width: 100%;
+    height: calc(100% - (50px));
+    height: -webkit-calc(100% - 50px);
+    max-height: calc(100% - 50px);
+    max-height: -webkit-calc(100% - 50px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+/* list and list items */
+
+ul {
+
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+
+}
+
+li {
+     float: left;
+      border: 1px solid grey ;
+      width: 200px;
+      height: 200px
+  
+}
+
+li h1{
+
+visibility: hidden;
+
+    
+}
+
+li p:nth-last-child(2){
+visibility: hidden;
+
+}
+
+
+li p {
+
+visibility: hidden;
+}
+
+li:first-child {
+  
+    #border-top: 5px solid grey;
+
+}
+
+/* disabled elements */
+
+[disabled] {
+
+    opacity: 0.5;
+
+}
+
+/* selected elements */
+
+li:active, .button:active  {
+
+    opacity: 0.1;
+
+}
+
+/* toast */
+
+.toast {
+
+    width: 60%;
+    position: fixed;
+    text-align: center;
+    bottom: 15%;
+    left: 20%;
+    opacity: 0.0;
+    transition: opacity 0.5s, background-color 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+
+
+.toast.shown {
+
+    opacity: 1.0;
+    /*transition-delay: 0s;*/
+    transition: opacity 1s, background-color 1s;
+
+}
+
+footer h2 {
+
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+ 
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
+
+Press h to open a hovercard with more details. 
