@@ -215,6 +215,11 @@ li:active, .button:active  {
 
 footer {
 
+    
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    text-transform: uppercase;
     height: 50px;
     width: 100%;
     max-width: 100%;
