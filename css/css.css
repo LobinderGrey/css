@@ -174,7 +174,6 @@ li:first-child {
 /* disabled elements */
 
 [disabled] {
-
     opacity: 0.5;
 
 }
@@ -214,7 +213,6 @@ li:active, .button:active  {
 
 footer {
 
-    
     margin: 0px;
     font-weight: normal;
     display: inline-block;
