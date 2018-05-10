@@ -29,7 +29,7 @@ header, footer, li {
 /* header and its parts */
 
 header {
-
+    position: absolute;
     height: 50px;
     width: 100%;
     max-width: 100%;
@@ -112,7 +112,10 @@ header h2 {
 /* main part of the view */
 
 .maincontent {
-
+    position: absolute;
+    border-top: 2px solid;    
+  
+    top: 60px;
     width: 100%;
     max-width: 100%;
     height: calc(100% - (50px));
@@ -127,16 +130,17 @@ header h2 {
 /* list and list items */
 
 ul {
-
     margin: 0px;
     list-style: none;
-    padding: 0px;
+    padding: 0px;      
+     
 
 }
 
 li {
      float: left;
       border: 1px solid grey ;
+      margin: 5px;
       width: 200px;
       height: 200px
   
@@ -158,6 +162,7 @@ visibility: hidden;
 li p {
 
 visibility: hidden;
+  
 }
 
 li:first-child {
@@ -207,6 +212,16 @@ li:active, .button:active  {
 
 }
 
+footer {
+
+      position: absolute;
+      border-top: 1px solid;
+      width: 100%;
+      max-width: 100%;
+      bottom: 60px;
+  
+}
+
 footer h2 {
 
     margin: 0px;
@@ -215,6 +230,7 @@ footer h2 {
     text-transform: uppercase;
 
 }
+
 
 © 2018 GitHub, Inc.
 Terms
