@@ -26,15 +26,32 @@ header, footer, li {
 
 }
 
-/* header and its parts */
+.button {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-origin: content-box;
+    background-position: center center;
+    filter: invert(90%);
+    -webkit-filter: invert(90%);
+}
+
+/* ########## HEADER ############# */
 
 header {
-    position: absolute;
+
     height: 50px;
     width: 100%;
     max-width: 100%;
     line-height: 50px;
-    #border-bottom: 1px solid grey;
+    border-bottom: 5px solid gray;
+    position: fixed;
+    background-color: white;
+    overflow: hidden;
+    z-index: 500;
 
 }
 
@@ -47,20 +64,77 @@ header h2 {
 
 }
 
-.button {
+.changeCss {
+    position: fixed;
+    right: 0px;
+}
 
-    height: 30px;
-    width: 30px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    display: inline-block;
-    background-origin: content-box;
-    background-position: center center;
-    filter: invert(90%);
-    -webkit-filter: invert(90%);
+.burger {
+
+    background-image: url("./img/glyphicons/png/glyphicons-157-show-thumbnails");
+    justify-content: flex-end;
+    margin-left: auto;
 
 }
+
+.tile {
+
+    background-image: url("./img/glyphicons/png/glyphicons-115-list.png");
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.new-item {
+
+    background-image: url("./img/glyphicons/png/glyphicons-433-plus.png");
+    /*float: right;*/
+    justify-content: flex-end;
+    margin-left: auto;
+
+}
+
+/* ########## END HEADER ############# */
+
+
+
+* #############  FOOTER ##################### */
+
+.refresh{
+    background-image: url("./img/glyphicons/png/glyphicons-82-refresh.png");
+    background-size: 23px 30px;
+    float: right;
+    justify-content: flex-start;
+}
+
+.loggout{
+    background-image: url("./img/glyphicons/png/glyphicons-388-log-out.png");
+    background-size: 23px 30px;
+    justify-content: flex-start;
+}
+
+footer {
+
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    line-height: 50px;
+    border-top: 1px solid orange;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background-color: white;
+
+}
+/* ##############  END FOOTER  ################ */
+
+
+
+
+
 
 .listeners-active .toggle-listeners {
 
@@ -142,9 +216,17 @@ li {
       border: 1px solid grey ;
       margin: 5px;
       width: 200px;
-      height: 200px
+      height: 200px;
   
 }
+li img{
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
 
 li h1{
 
@@ -167,7 +249,7 @@ visibility: hidden;
 
 li:first-child {
   
-    #border-top: 5px solid grey;
+    /*border-top: 5px solid grey; */
 
 }
 
@@ -232,18 +314,3 @@ footer h2 {
 }
 
 
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
- 
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-
-Press h to open a hovercard with more details. 

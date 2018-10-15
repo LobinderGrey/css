@@ -33,8 +33,11 @@ function onListItemSelected(event) {
     }
 }
 
-function toggleListeners() {
+function changeCss(sheet) {
+    document.getElementById('pagestyle').setAttribute('href', sheet);
+}
 
+function toggleListeners() {
 
     // we set an onclick listener on the list view and check from which item the event was generated
     // we also set a listener on the '+'-button that loads content from the server!
