@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3425bd09-30dd-4c53-8978-2ff327e0e96e" name="Default" comment="Neue Version Updated">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3425bd09-30dd-4c53-8978-2ff327e0e96e" name="Default" comment=" november">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css_kachel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css_kachel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htm.html" beforeDir="false" afterPath="$PROJECT_DIR$/htm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jsl.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jsl.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +39,7 @@
           <entry key="CSS" value="1803" />
           <entry key="HTML" value="391" />
           <entry key="JavaScript" value="1201" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,7 +47,7 @@
           <entry key="css" value="1803" />
           <entry key="html" value="391" />
           <entry key="js" value="1201" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -205,7 +200,7 @@
       <workItem from="1541872623425" duration="2837000" />
       <workItem from="1541924755790" duration="5100000" />
       <workItem from="1541945709393" duration="3481000" />
-      <workItem from="1541968724362" duration="3907000" />
+      <workItem from="1541968724362" duration="4538000" />
     </task>
     <task id="LOCAL-00001" summary="Neue Version Updated">
       <created>1539607732466</created>
@@ -214,11 +209,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539607732466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" november">
+      <created>1542008003979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542008003979</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45454000" />
+    <option name="totallyTimeSpent" value="46085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
@@ -270,7 +272,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Neue Version Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neue Version Updated" />
+    <MESSAGE value=" november" />
+    <option name="LAST_COMMIT_MESSAGE" value=" november" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
