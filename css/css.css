@@ -26,17 +26,19 @@ header, footer, li {
 
 }
 
-.button {
-    height: 30px;
-    width: 30px;
-    padding: 10px;
-    background-repeat: no-repeat;
+button {
     background-size: 30px 30px;
     display: inline-block;
     background-origin: content-box;
-    background-position: center center;
     filter: invert(90%);
     -webkit-filter: invert(90%);
+    border: 0;
+    background: transparent no-repeat center center;
+    height: 30px;
+    width: 30px;
+    padding: 10px 10px;
+    font-size: 0pt;
+    margin-top: 10px;
 }
 
 /* ########## HEADER ############# */
@@ -64,24 +66,12 @@ header h2 {
 
 }
 
-.changeCss {
-    position: fixed;
-    right: 0px;
-}
-
-.burger {
-
-    background-image: url("./img/glyphicons/png/glyphicons-157-show-thumbnails");
-    justify-content: flex-end;
-    margin-left: auto;
-
-}
 
 .tile {
+    background-image: url("./img/glyphicons/png/glyphicons-157-show-thumbnails.png");
+    position: absolute;
+    right: 40px;
 
-    background-image: url("./img/glyphicons/png/glyphicons-115-list.png");
-    justify-content: flex-end;
-    margin-left: auto;
 }
 
 .new-item {
@@ -95,21 +85,22 @@ header h2 {
 
 /* ########## END HEADER ############# */
 
-
-
 /* #############  FOOTER ##################### */
 
 .refresh{
     background-image: url("./img/glyphicons/png/glyphicons-82-refresh.png");
     background-size: 23px 30px;
+    margin-top: 5px;
     float: right;
-    justify-content: flex-start;
+
+
 }
 
-.loggout{
+.logout{
     background-image: url("./img/glyphicons/png/glyphicons-388-log-out.png");
     background-size: 23px 30px;
-    justify-content: flex-start;
+    margin-top: 5px;
+    float: left;
 }
 
 footer {
@@ -131,30 +122,12 @@ footer {
 }
 /* ##############  END FOOTER  ################ */
 
-.listeners-active .toggle-listeners {
 
-    background-image: url("./img/glyphicons/png/glyphicons-560-mic-mute.png");
-    background-size: 23px 30px;
-    /*float: left;*/
-    justify-content: flex-start;
-
-}
-
-.toggle-listeners {
-
-    background-image: url("./img/glyphicons/png/glyphicons-301-microphone.png");
-    background-size: 23px 30px;
-    /*float: left;*/
-    justify-content: flex-start;
-
-}
-
-.listeners-active .toggle-list {
+.toggle-list {
 
     background-image: url("./img/glyphicons/png/glyphicons-517-menu-hamburger.png");
     background-size: 23px 30px;
     /*float: left;*/
-    justify-content: flex-start;
 
 }
 
@@ -186,18 +159,23 @@ footer {
 
 /* main part of the view */
 
-.maincontent {
+main {
 
     padding-top: 50px;
     padding-bottom: 50px;
-
     width: 100%;
     max-width: 100%;
     height: calc(100% - (50px));
     height: -webkit-calc(100% - 50px);
     max-height: calc(100% - 50px);
     max-height: -webkit-calc(100% - 50px);
+    opacity: 1.0;
+    transition-delay: 2s;
+}
 
+main.faded {
+    opacity: 0.0;
+    transition: opacity 2s;
 
 }
 
@@ -233,9 +211,6 @@ li p:nth-last-child(2){
     left: 90px;
 }
 
-
-
-
 .tag {
     position: absolute;
     bottom: 0;
@@ -254,9 +229,7 @@ li img {
 }
 
 li:first-child {
-  
     /* border-top: 5px solid grey; */
-
 }
 
 /* disabled elements */
@@ -289,8 +262,6 @@ li:active, .button:active  {
 
 }
 
-
-
 .toast.shown {
 
     opacity: 1.0;
@@ -299,5 +270,34 @@ li:active, .button:active  {
 
 }
 
+/* ########## KACHEL ANSICHT ############# */
 
+.tiles li {
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+    font-size: 0pt;
+    border-bottom: none;
+    margin-bottom: 10px;
+    float: left;
+}
 
+.tiles li img {
+    width: 100%;
+    height: 100%;
+}
+
+.tiles li .edit {
+    display: none;
+}
+.tiles h1 {
+    font-size: 0pt;
+}
+
+.tiles .tile {
+
+    background-image: url("./img/glyphicons/png/glyphicons-115-list.png");
+    position: absolute;
+    right: 40px;
+
+}

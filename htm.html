@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Neue Beispiele HTM, CSS, JSL, JSR</title>
-
     <!-- add style -->
-
     <link id="pagestyle" rel="stylesheet" href="css/css.css"/>
-
-    <!-- add interaction control -->
-
     <script type="application/javascript" src="js/jsl.js"></script>
     <script type="application/javascript" src="js/jsr.js"></script>
-    <!-- add the "library" script wrapping XMLHttpRequest -->
     <script type="application/javascript" src="js/lib/xhr.js"></script>
-
 </head>
-
-<body>
-
+<body class="tiles">
     <header>
-        <div class="button toggle-list" onclick="toggleListeners()"></div>
+        <button class="button toggle-list"></button>
         <h2>Medien</h2>
-        <div class="changeCss">
-        <div class="button tile" id="switchbutton1" onclick="changeCss('css/css_kachel.css')"></div>
-        <div class="button burger" id="switchbutton2" onclick="changeCss('css/css.css')"></div>
-        </div>
-        <div class="button new-item" disabled="disabled"></div>
+        <button class="button tile"></button>
+        <button class="button new-item"></button>
     </header>
 
-    <div class="maincontent">
-
+    <main>
         <ul>
           <div class="listelement"><li><img src="data/m1.jpg"><h1>M1</h1><div class="tag"><p>0</p></div><div class="address"><p>lorempixel.com</p></div><p>22.02.2016</p><div class="option"></div></li></div>
           <div class="listelement"><li><img src="data/m2.jpeg"><h1>M2</h1><div class="tag"><p>0</p></div><div class="address"><p>lorempixel.com</p></div><p>22.02.2016</p><div class="option"></div></li></div>
@@ -42,17 +28,10 @@
           <div class="listelement"><li><img src="data/m4.jpeg"><h1>M4</h1><div class="tag"><p>0</p></div><div class="address"><p>lorempixel.com</p></div><p>22.02.2016</p><div class="option"></div></li></div>
           <div class="listelement"><li><img src="data/m5.jpeg"><h1>M5</h1><div class="tag"><p>0</p></div><div class="address"><p>lorempixel.com</p></div><p>22.02.2016</p><div class="option"></div></li></div>
         </ul>
-
-    </div>
-
-    <div class="toast">
-
-        lorem ipsum
-
-    </div>
+    </main>
     <footer>
-        <div class="button loggout" onclick="toggleListeners()"></div>
-        <div class="button refresh" disabled="disabled"></div>
+        <button class="logout">logout</button>
+        <button class="refresh">refresh</button>
     </footer>
 </body>
 </html>
